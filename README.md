@@ -1,11 +1,11 @@
 # git-test
 
 # git cheat-sheet
+https://github.com/amousa1968/git-test/
 
 The git command-line utility has plenty of inconsistencies
-http://steveko.wordpress.com/2012/02/24/10-things-i-hate-about-git/
 
-A GUI like http://sourcetreeapp.com is often helpful, but staying on the command line usually quicker.
+A GUI like  is often helpful, but staying on the command line usually quicker.
 This is a list of the commands I use most frequently, listed by funcional category:
 
 ### current state
@@ -20,7 +20,7 @@ This is a list of the commands I use most frequently, listed by funcional catego
 `git commit -am 'message'`		add/commit all changes from all tracked files (no untracked files) in one go  
 
 ### undoing previous actions
-http://git-scm.com/book/en/Git-Tools-Rewriting-History  
+  
 `git reset filename`				unstage file  
 `git commit --amend -m 'message'`	alter the last commit (add any staged files, new comment)  
 `git reset --soft HEAD^`			undo previous commit, put changes in staging  
@@ -75,8 +75,7 @@ http://git-scm.com/book/en/Git-Tools-Rewriting-History
 `git push --tags`	push new tags to remote  
 
 ### dealing with large files - keep them outside the repo on an ssh machine.
-http://stackoverflow.com/questions/540535/managing-large-binary-files-with-git  
-http://git-annex.branchable.com/walkthrough/ #see ssh section  
+ #see ssh section  
 
 `git annex add mybigfile`  
 `git commit -m 'add mybigfile'`  
