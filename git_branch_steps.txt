@@ -1,0 +1,42 @@
+git init
+git branch
+touch README.md
+cat README.md
+git status
+cp .git_old/config .git/config
+cat .git/config
+mv .gitattributes .gitattributes.old
+git lfs install .
+  843  git lfs track "*.so" "*.tar" "*.bat" "*.exe" "*.zip" "*.EXE" "Pdisk0" "*Amp0-Pdisk0" "*Amp1-Pdisk0" "tools/**" "opnpde/build/nt-i386/bin/**" "opnpde/build/nt-ia64/bin/**" "opnpde/build/nt-x8664/bin/**" "*opnpde/src/tools/win/installdemopkg/td12/TeradataForWindows/config/Pdisks/256mb/Amp0-Pdisk0" "*opnpde/src/tools/win/installdemopkg/td12/TeradataForWindows/config/Pdisks/256mb/Amp1-Pdisk0" "src/tools/win/installdemopkg/td12/TeradataForWindows/config/Pdisks/4096mb/4096pdisks.zip" "src/vendor/java/jre-nt-i386.tar" "src/tools/win/installdemopkg/td12/TeradataForWindows/config/Pdisks/256mb/Amp1-Pdisk0" "src/tools/win/installdemopkg/td12/TeradataForWindows/config/Pdisks/256mb/Amp0-Pdisk0" "delivery/suselinux-x8664/lib/libpde.so"
+
+git add -A
+git commit -m "First checkin for opnpde_14.10.0.x"
+git tag OPNPDE_14.10_GCA
+git push
+git branch 14.10.0.x
+git push 14.10.0.x
+git push master 14.10.0.x
+git push -u 14.10.0.x
+git push -u master 14.10.0.x
+git push -u origin 14.10.0.x
+
+ls -la
+git add --all
+git commit -m "2nd commit for opnpde_14.10.1.x"
+git tag -f OPNPDE_14.10.1.1_GCA
+git tag -f OPNPDE_14.10.1.1_GCA
+git push
+git branch 14.10.1.x
+git push -u master 14.10.1.x
+git push -u 14.10.1.x
+git push 14.10.1.x
+git push -u origin 14.10.1.x
+
+  
+ls -la
+git add --all
+git commit -m "3rd commit for opnpde_14.10.2.x"
+git tag -f OPNPDE_14.10.2.1_GCA
+git push
+git branch 14.10.2.x
+git push -u origin 14.10.2.x
